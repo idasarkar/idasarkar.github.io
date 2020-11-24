@@ -53,13 +53,16 @@ table {
 }
 
 ol {
-    column-count: 4;
+    /*column-count: 4;
     column-gap: 40px;
-    column-rule-style: none;
+    column-rule-style: none;*/
+    list-style-type: none;
     font-family: verdana;
 }
 
 li {
+    width: 250px;
+    display: inline-block;
     font-size: 15px;
     font-family: verdana;
 }
