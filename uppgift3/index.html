@@ -22,16 +22,45 @@
             margin: 20px;
             padding: 20px;
         }
+
+        .image {
+            max-width: 200px;
+        }
+
+        .profileimage {
+            max-width: 100px;
+        }
+
+        header {
+            font-family: Lucida;
+            background-color: purple;
+            color: white;
+
+        }
+
+        footer {
+            background-color: purple;
+        }
+        a {
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <h1>MYFLOW</h1>
+    <header>
+        <table style="width: 100%;">
+            <td align="left">
+                <h1>MYFLOW</h1>
+            </td>
+        </table>
+    </header>
+
     <div class="posts">
         <p></p>
         <table>
             <tr>
-                <td><img src="Profile_-_Cinderella.jpg" alt="" width="100px"></td>
+                <td><img src="Profile_-_Cinderella.jpg" alt="" class="profileimage"></td>
                 <td>
                     <h5>Anna Nilsson</h5>
                 </td>
@@ -39,7 +68,8 @@
         </table>
 
         <p>God Jul och gott nytt år alla!</p>
-        <img src="julfilmer_tecknat-92a483262242da910b7702e67bbcc579bad74415f966b2f5994c9f4b757a1504.jpg" alt="" max-width= "200px">
+        <img src="julfilmer_tecknat-92a483262242da910b7702e67bbcc579bad74415f966b2f5994c9f4b757a1504.jpg" alt=""
+            class="image">
     </div>
 
     <div class="posts">
@@ -47,7 +77,7 @@
         <table>
             <tr>
 
-                <td><img src="original.jpg" alt="" width="100px"></td>
+                <td><img src="original.jpg" alt="" class="profileimage"></td>
                 <td>
                     <h5>Edna Olsson</h5>
                 </td>
@@ -61,7 +91,7 @@
         <p></p>
         <table>
             <tr>
-                <td><img src="images.jpeg" alt="" width="100px"></td>
+                <td><img src="images.jpeg" alt="" class="profileimage"></td>
                 <td>
                     <h5>Timmy Turner</h5>
                 </td>
@@ -75,7 +105,7 @@
         <p></p>
         <table>
             <tr>
-                <td><img src="main-qimg-ed13b8b23cada2fd56bf7337b651dade.jpeg" alt="" width="100px"></td>
+                <td><img src="main-qimg-ed13b8b23cada2fd56bf7337b651dade.jpeg" alt="" class="profileimage"></td>
                 <td>
                     <h5>Hiro Hamada</h5>
                 </td>
@@ -83,11 +113,15 @@
         </table>
 
         <p>Jag och Baymax.</p>
-        <img src="big-hero-6-hiro-hamada-baymax-4574.jpg" alt="" max-width="200px">
-        <img src="hiro-hamada-baymax-fred-honey-lemon-tadashi-hamada-hero.jpg" alt="" max-width="200px">
+        <img src="big-hero-6-hiro-hamada-baymax-4574.jpg" alt="" class="image">
+        <img src="hiro-hamada-baymax-fred-honey-lemon-tadashi-hamada-hero.jpg" alt="" class="image">
         <img src="png-transparent-baymax-hiro-hamada-tadashi-hamada-big-hero-6-the-walt-disney-company-gopro-hero-6-superhero-poster-film.png"
-            alt="" max-width="200px">
+            alt="" class="image">
     </div>
+
+    <footer>
+        <a href="#top">Gå till sidans topp</a>
+    </footer>
 </body>
 
 </html>
