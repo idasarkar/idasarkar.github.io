@@ -23,6 +23,13 @@
             padding: 20px;
         }
 
+        div.status {
+            border: 2px solid grey;
+            margin: 5%;
+
+
+        }
+
         .image {
             max-width: 200px;
         }
@@ -38,24 +45,93 @@
 
         }
 
+
         footer {
             background-color: purple;
         }
+
         a {
             color: white;
             padding: 10%;
         }
+
+        .headerimage {
+            max-width: 10%;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .button2 {
+            background-color: purple;
+            color: white;
+        }
+
+        .button-div {
+            float: right;
+            padding-top: 5px;
+        }
+
+        table, th {
+            width: 100%;
+            border: 1px solid black;
+        }
+        td {
+            width: 50%;
+            border: 1px solid black;
+            padding: 15px;
+            padding-right: 15px;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
-        <table style="width: 100%;">
+        <table>
             <td align="left">
                 <h1>MYFLOW</h1>
             </td>
+            <td align="right" style="text-align: right;">
+                <h5>Belle Andersson</h5>
+                <img src="3a21c882f04eaa98c2135d787d1f6140.jpg" alt="" class="headerimage">
+            </td>
         </table>
     </header>
+    <div class="posts">
+        <p></p>
+
+        <table>
+            <tr>
+                <td><img src="3a21c882f04eaa98c2135d787d1f6140.jpg" alt="" class="profileimage"></td>
+                <td>
+                    <h5>Belle Andersson</h5>
+                </td>
+            </tr>
+        </table>
+        <div class="status">
+            <p>"Skapa inlägg..."</p>
+            <div class="button-div">
+                <button onclick="alert ('Inte implementerat än')" buttom class="button1">Anpassa åskådare</button>
+                <button onclick="alert ('Inte implementerat än')" buttom class="button2">Publicera</button>
+            </div>
+        </div>
+
+    </div>
 
     <div class="posts">
         <p></p>
