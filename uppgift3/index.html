@@ -13,8 +13,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
 
-    <script>function myFunction(x) {
+    <script>
+        function myFunction(x) {
             x.classList.toggle("fa-thumbs-down");
+        }
+
+        function showHide() {
+            var x = document.getElementById("contactForm");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 
@@ -83,6 +93,46 @@
         label {
             color: white;
         }
+
+        .dropbtn {
+            background-color: purple;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: purple;
+        }
     </style>
 </head>
 
@@ -94,7 +144,7 @@
                     <h1>MYFLOW</h1>
                 </div>
                 <div class="six columns" align="right">
-                    <img src="3a21c882f04eaa98c2135d787d1f6140.jpg" alt="" class="headerimage">
+                    <img src="Ukrainska-kvinnor-dating.jpg" alt="" class="headerimage">
                     <h5>Belle Andersson</h5>
                 </div>
 
@@ -104,7 +154,7 @@
         <div class="posts">
             <form>
                 <div class="row">
-                    <div class="three columns"><img src="3a21c882f04eaa98c2135d787d1f6140.jpg" alt=""
+                    <div class="three columns"><img src="Ukrainska-kvinnor-dating.jpg" alt=""
                             class="profileimage">
                         <h6>Belle Andersson</h6>
                     </div>
@@ -119,6 +169,7 @@
                         </div>
                     </div>
                 </div>
+
             </form>
         </div>
 
@@ -126,21 +177,30 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="3a21c882f04eaa98c2135d787d1f6140.jpg" alt="" class="profileimage">
+                <div class="three columns"><img src="Ukrainska-kvinnor-dating.jpg" alt="" class="profileimage">
                     <h6>Belle Andersson</h6>
                 </div>
 
                 <div class="six columns">
                     <p>Ska träna idag, vilka ska också göra det?</p>
                 </div>
-
+                <div class="three columns">
+                    <div class="dropdown">
+                        <button class="dropbtn">Meny</button>
+                        <div class="dropdown-content">
+                            <a href="#">Redigera inlägg</a>
+                            <a href="#">Antal likes</a>
+                            <a href="#">Vem får se?</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="Profile_-_Cinderella.jpg" alt="" class="profileimage">
+                <div class="six columns"><img src="i8.jpg" alt="" class="profileimage">
                     <h6>Anna Nilsson</h6>
                 </div>
 
@@ -165,7 +225,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="original.jpg" alt="" class="profileimage">
+                <div class="six columns"><img src="linda-hunt-as-henrietta-lange.webp" alt="" class="profileimage">
                     <h6>Edna Olsson</h6>
                 </div>
 
@@ -187,7 +247,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="images.jpeg" alt="" class="profileimage">
+                <div class="six columns"><img src="unnamed.jpg" alt="" class="profileimage">
                     <h6>Timmy Turner</h6>
                 </div>
                 <div class="six columns">
@@ -208,16 +268,14 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="main-qimg-ed13b8b23cada2fd56bf7337b651dade.jpeg" alt=""
+                <div class="six columns"><img src="man-med-skagg.jpg" alt=""
                         class="profileimage">
-                    <h6>Hiro Hamada</h6>
+                    <h6>Linus Nilsson</h6>
                 </div>
                 <div class="six columns">
-                    <p>Jag och Baymax.</p>
-                    <img src="big-hero-6-hiro-hamada-baymax-4574.jpg" alt="" class="image">
-                    <img src="hiro-hamada-baymax-fred-honey-lemon-tadashi-hamada-hero.jpg" alt="" class="image">
-                    <img src="png-transparent-baymax-hiro-hamada-tadashi-hamada-big-hero-6-the-walt-disney-company-gopro-hero-6-superhero-poster-film.png"
-                        alt="" class="image">
+                    <p>Min vackra familj.</p>
+                    <img src="oldies6.jpg" alt="" class="image">
+                    <img src="341e6082-b3c8-42d1-a8e7-16e27591cccd.jpg" alt="" class="image">
                 </div>
             </div>
 
@@ -232,33 +290,37 @@
         </div>
 
         <footer>
-            <form>
-                <div class="row">
-                    <div class="six columns">
-                        <label for="exampleEmailInput">Din email</label>
-                        <input class="u-full-width" type="email" placeholder="test@mailbox.se" id="exampleEmailInput">
+            <a onclick="showHide()">Kontakta oss</a>
+            <div id="contactForm" style="display:none">
+                <form>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="exampleEmailInput">Din email</label>
+                            <input class="u-full-width" type="email" placeholder="test@mailbox.se"
+                                id="exampleEmailInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="exampleRecipientInput">Vad vill du ha hjälp med?</label>
+                            <select class="u-full-width" id="exampleRecipientInput">
+                                <option value="Option 1">Skapa nya inlägg</option>
+                                <option value="Option 2">Vem får se mina inlägg?</option>
+                                <option value="Option 3">Övriga frågor</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="six columns">
-                        <label for="exampleRecipientInput">Vad vill du ha hjälp med?</label>
-                        <select class="u-full-width" id="exampleRecipientInput">
-                            <option value="Option 1">Skapa nya inlägg</option>
-                            <option value="Option 2">Vem får se mina inlägg?</option>
-                            <option value="Option 3">Övriga frågor</option>
-                        </select>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <label for="exampleMessage">Meddelande</label>
+                            <textarea class="u-full-width" placeholder="Hej Belle…" id="exampleMessage"></textarea>
+                            <label class="example-send-yourself-copy">
+                                <input type="checkbox">
+                                <span class="label-body">Få en kopia på din mail</span>
+                            </label>
+                            <input class="button-primary" type="submit" value="Skicka">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <label for="exampleMessage">Meddelande</label>
-                        <textarea class="u-full-width" placeholder="Hej Belle…" id="exampleMessage"></textarea>
-                        <label class="example-send-yourself-copy">
-                            <input type="checkbox">
-                            <span class="label-body">Få en kopia på din mail</span>
-                        </label>
-                        <input class="button-primary" type="submit" value="Skicka">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <a href="#top">Gå till sidans topp</a>
         </footer>
     </div>
