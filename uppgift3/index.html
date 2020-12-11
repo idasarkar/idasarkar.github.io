@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>MyFlow</title>
+    <title>Skriva, dela, gilla</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,11 +16,11 @@
 
     <script>
         function myFunction(x) {
-            x.classList.toggle("fa-thumbs-down");
+            x.classList.toggle("fa-heart-o");
         }
 
-        function showHide() {
-            var x = document.getElementById("contactForm");
+        function showHide(id) {
+            var x = document.getElementById(id.id);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
@@ -63,11 +64,10 @@
 
         a {
             color: white;
-            padding: 10%;
         }
 
         .headerimage {
-            max-width: 20%;
+            max-width: 10%;
         }
 
         .button1 {
@@ -133,6 +133,26 @@
         .dropdown:hover .dropbtn {
             background-color: purple;
         }
+
+        .likeButton {
+            all: revert;
+            color: white;
+        }
+
+        .fa {
+            font-size: 50px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .fa:hover {
+            color: darkred;
+        }
+
+        .heart {
+            font-size: 25px;
+            color: red;
+        }
     </style>
 </head>
 
@@ -140,21 +160,22 @@
     <div class="container">
         <header>
             <div class="row">
-                <div class="six columns" align="left">
-                    <h1>MYFLOW</h1>
+                <div class="eight columns" align="left">
+                    <h1>MYFLOW - Skriv,dela, gilla</h1>
                 </div>
-                <div class="six columns" align="right">
-                    <img src="unnamed (kopia).jpg" alt="" class="headerimage">
+                <div class="four columns" align="right">
+                    <img src="unnamed (kopia).jpg" alt="skriv, dela, gilla" class="headerimage">
                     <h5>Belle Andersson</h5>
                 </div>
-
             </div>
-
         </header>
+    </div>
+
+    <div class="container">
         <div class="posts">
             <form>
                 <div class="row">
-                    <div class="three columns"><img src="unnamed (kopia).jpg" alt=""
+                    <div class="three columns"><img src="unnamed (kopia).jpg" alt="skriv, dela, gilla"
                             class="profileimage">
                         <h6>Belle Andersson</h6>
                     </div>
@@ -177,7 +198,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="three columns"><img src="unnamed (kopia).jpg" alt="" class="profileimage">
+                <div class="three columns"><img src="unnamed (kopia).jpg" alt="skriv, dela, gilla" class="profileimage">
                     <h6>Belle Andersson</h6>
                 </div>
 
@@ -200,7 +221,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="i8.jpg" alt="" class="profileimage">
+                <div class="six columns"><img src="i8.jpg" alt="skriv, dela, gilla" class="profileimage">
                     <h6>Anna Nilsson</h6>
                 </div>
 
@@ -216,7 +237,7 @@
                     <p></p>
                 </div>
                 <div class="one column">
-                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                    <i onclick="myFunction(this)" class="heart fa fa-heart"></i>
                 </div>
             </div>
 
@@ -225,7 +246,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="LindaHunt_01.webp" alt="" class="profileimage">
+                <div class="six columns"><img src="LindaHunt_01.webp" alt="skriv, dela, gilla" class="profileimage">
                     <h6>Edna Olsson</h6>
                 </div>
 
@@ -239,7 +260,7 @@
                     <p></p>
                 </div>
                 <div class="one column">
-                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                    <i onclick="myFunction(this)" class="heart fa fa-heart"></i>
                 </div>
             </div>
         </div>
@@ -247,7 +268,7 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="unnamed.jpg" alt="" class="profileimage">
+                <div class="six columns"><img src="unnamed.jpg" alt="skriv, dela, gilla" class="profileimage">
                     <h6>Timmy Turner</h6>
                 </div>
                 <div class="six columns">
@@ -260,7 +281,7 @@
                     <p></p>
                 </div>
                 <div class="one column">
-                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                    <i onclick="myFunction(this)" class="heart fa fa-heart"></i>
                 </div>
             </div>
         </div>
@@ -268,14 +289,14 @@
         <div class="posts">
 
             <div class="row">
-                <div class="six columns"><img src="bc1bea4b67e3c0b0ab7cb7e1eb38c1e4.jpg" alt=""
+                <div class="six columns"><img src="bc1bea4b67e3c0b0ab7cb7e1eb38c1e4.jpg" alt="skriv, dela, gilla"
                         class="profileimage">
                     <h6>Linus Nilsson</h6>
                 </div>
                 <div class="six columns">
                     <p>Min vackra familj.</p>
-                    <img src="oldies6.jpg" alt="" class="image">
-                    <img src="341e6082-b3c8-42d1-a8e7-16e27591cccd.jpg" alt="" class="image">
+                    <img src="oldies6.jpg" alt="skriv, dela, gilla" class="image">
+                    <img src="341e6082-b3c8-42d1-a8e7-16e27591cccd.jpg" alt="skriv, dela, gilla" class="image">
                 </div>
             </div>
 
@@ -284,44 +305,62 @@
                     <p></p>
                 </div>
                 <div class="one column">
-                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                    <i onclick="myFunction(this)" class="heart fa fa-heart"></i>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <footer>
-            <a onclick="showHide()">Kontakta oss</a>
-            <div id="contactForm" style="display:none">
-                <form>
-                    <div class="row">
-                        <div class="six columns">
-                            <label for="exampleEmailInput">Din email</label>
-                            <input class="u-full-width" type="email" placeholder="test@mailbox.se"
-                                id="exampleEmailInput">
-                        </div>
-                        <div class="six columns">
-                            <label for="exampleRecipientInput">Vad vill du ha hjälp med?</label>
-                            <select class="u-full-width" id="exampleRecipientInput">
-                                <option value="Option 1">Skapa nya inlägg</option>
-                                <option value="Option 2">Vem får se mina inlägg?</option>
-                                <option value="Option 3">Övriga frågor</option>
-                            </select>
-                        </div>
-                    </div>
+            <div class="row">
+                <a onclick="showHide(presentation)">Om oss</a>
+                <div id="presentation" style="display:none">
                     <div class="row">
                         <div class="twelve columns">
-                            <label for="exampleMessage">Meddelande</label>
-                            <textarea class="u-full-width" placeholder="Hej Belle…" id="exampleMessage"></textarea>
-                            <label class="example-send-yourself-copy">
-                                <input type="checkbox">
-                                <span class="label-body">Få en kopia på din mail</span>
-                            </label>
-                            <input class="button-primary" type="submit" value="Skicka">
+                            <h2 style="color: white;">MYFLOW-Skriv, dela, gilla</h2>
+                            <p style="color: white;">MYFLOW är en hemsida som vill kunna ha koll på vad man vill dela.
+                                Skriv enkelt nya inlägg
+                                och se och
+                                gilla vad dina vänner gör. Att kunna hålla nära
+                                och kära uppdaterade och att kunna ha en plattform att uttrycka sig på.</p>
                         </div>
                     </div>
-                </form>
+                </div>
+
+                <a onclick="showHide(contactForm) ">Kontakta oss</a>
+                <div id="contactForm" style="display:none">
+                    <form>
+                        <div class="row">
+                            <div class="six columns">
+                                <label for="exampleEmailInput">Din email</label>
+                                <input class="u-full-width" type="email" placeholder="test@mailbox.se"
+                                    id="exampleEmailInput">
+                            </div>
+                            <div class="six columns">
+                                <label for="exampleRecipientInput">Vad vill du ha hjälp med?</label>
+                                <select class="u-full-width" id="exampleRecipientInput">
+                                    <option value="Option 1">Skapa nya inlägg</option>
+                                    <option value="Option 2">Vem får se mina inlägg?</option>
+                                    <option value="Option 3">Övriga frågor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns">
+                                <label for="exampleMessage">Meddelande</label>
+                                <textarea class="u-full-width" placeholder="Hej Belle…" id="exampleMessage"></textarea>
+                                <label class="example-send-yourself-copy">
+                                    <input type="checkbox">
+                                    <span class="label-body">Få en kopia på din mail</span>
+                                </label>
+                                <input class="button-primary" type="submit" value="Skicka">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#top">Gå till sidans topp</a>
             </div>
-            <a href="#top">Gå till sidans topp</a>
         </footer>
     </div>
 </body>
