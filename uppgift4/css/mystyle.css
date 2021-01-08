@@ -1,0 +1,149 @@
+
+
+        h1 {
+            font-family: Lucida;
+        }
+
+        .center {
+            line-height: 200px;
+            height: 250px;
+            padding: 15px;
+            width: 350px;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .myDiv {
+            width: 305px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+  
+
+  
+        body {
+            background-color: white;
+        }
+
+        .posts {
+            border: 4px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .image {
+            max-width: 200px;
+        }
+
+        .profileimage {
+            max-width: 100px;
+        }
+
+        header {
+            font-family: Lucida;
+            background-color: purple;
+            color: white;
+
+        }
+
+
+        footer {
+            background-color: purple;
+            padding: 15px;
+        }
+
+        a {
+            color: white;
+        }
+
+        .headerimage {
+            max-width: 10%;
+        }
+
+        .button1 {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .button2 {
+            background-color: purple;
+            color: white;
+        }
+
+        .button-div {
+            float: right;
+            padding-top: 5px;
+            padding: 15px;
+        }
+
+        .row {
+            padding: 15px;
+        }
+
+        label {
+            color: white;
+        }
+
+        .dropbtn {
+            background-color: purple;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: purple;
+        }
+
+        .likeButton {
+            all: revert;
+            color: white;
+        }
+
+        .fa {
+            font-size: 50px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .fa:hover {
+            color: darkred;
+        }
+
+        .heart {
+            font-size: 25px;
+            color: red;
+        }
+ 
+
+    
