@@ -1,19 +1,35 @@
 // Inloggningen 
 function password() {
 
-    x = document.getElementById("username").value;
-    y = document.getElementById("password").value;
+    user = document.getElementById("username").value;
+    pass = document.getElementById("password").value;
 
 
     // Jämför vad som är skrivet med lista av godkända användare och lösenord
-    if (x == "Belle Andersson" && y == "Himlenärblå") {
-
+    if (user == "Belle Andersson" && pass == "Himlenärblå") {
+        loginuser(user);
         window.open("secret2.html");
     }
     // Släpp inte in om uppgifterna är fel
     else {
+        logoutuser();
         document.getElementById("myAnswer").innerHTML = "Username or Password is wrong. Please try again. ";
     }
+}
+
+//sparar användaren i session
+function loginuser(name) {
+    sessionStorage.setItem("username", name);
+}
+
+//tarbort användaren i session
+function logoutuser() {
+    sessionStorage.setItem("username", "")
+}
+
+//Hämta användaren ifrån sessionen
+function getuser() {
+    return sessionStorage.getItem("username")
 }
 
 // Likes knappen 

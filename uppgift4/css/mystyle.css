@@ -2,6 +2,7 @@
 
         h1 {
             font-family: Lucida;
+            color: white;
         }
 
         .center {
@@ -10,8 +11,9 @@
             padding: 15px;
             width: 350px;
             border: 3px solid black;
-            text-align: center;
+            text-align: left;
             line-height: 1.5;
+            color: white;
         }
 
         .myDiv {
