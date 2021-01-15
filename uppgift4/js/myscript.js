@@ -8,7 +8,7 @@ function password() {
     // Jämför vad som är skrivet med lista av godkända användare och lösenord
     if (user == "Belle Andersson" && pass == "Himlenärblå") {
         loginuser(user);
-        window.open("secret2.html");
+        window.open("secret2.html", "_top");
     }
     // Släpp inte in om uppgifterna är fel
     else {
@@ -17,19 +17,39 @@ function password() {
     }
 }
 
-//sparar användaren i session
+//Sparar användaren i session
 function loginuser(name) {
     sessionStorage.setItem("username", name);
 }
 
-//tarbort användaren i session
+//Tarbort användaren i session
 function logoutuser() {
-    sessionStorage.setItem("username", "")
+    sessionStorage.setItem("username", "");
+}
+
+//Loggar ut användaren och laddar om sidan
+function logoutandreload() {
+    logoutuser();
+    location = location;
+    return false;
 }
 
 //Hämta användaren ifrån sessionen
 function getuser() {
-    return sessionStorage.getItem("username")
+    return sessionStorage.getItem("username");
+}
+
+//Den sätter användarnamn och profilbild
+function checkloggedinuser() {
+    var user = getuser();
+    if ((user != "") && (user != null)) {
+        document.getElementById("username").innerHTML = user;
+        document.getElementById("headerimage").src = "images/" + user + ".jpg";
+        document.getElementById("newpostimage").src = "images/" + user + ".jpg";
+        document.getElementById("loggedinuser").innerHTML = user;
+    } else {
+        window.location.replace("login.html");
+    }
 }
 
 // Likes knappen 

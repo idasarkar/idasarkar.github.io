@@ -5,6 +5,10 @@
             color: white;
         }
 
+        h2 {
+            color: white;
+        }
+
         .center {
             line-height: 200px;
             height: 250px;
@@ -63,6 +67,7 @@
             max-width: 10%;
         }
 
+        /* Knapparnas utseende */
         .button1 {
             background-color: #008CBA;
             color: white;
@@ -79,6 +84,10 @@
             padding: 15px;
         }
 
+        input[type=button] {
+            color: white;
+        }
+
         .row {
             padding: 15px;
         }
@@ -87,6 +96,7 @@
             color: white;
         }
 
+        /* "dropdown button"s utseende */
         .dropbtn {
             background-color: purple;
             color: white;
@@ -126,7 +136,7 @@
         .dropdown:hover .dropbtn {
             background-color: purple;
         }
-
+        /* Detaljer om gillaknapparna */
         .likeButton {
             all: revert;
             color: white;
@@ -142,6 +152,7 @@
             color: darkred;
         }
 
+        /* Gillaknappens utseende */
         .heart {
             font-size: 25px;
             color: red;

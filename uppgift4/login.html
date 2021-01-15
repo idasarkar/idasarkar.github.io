@@ -13,21 +13,22 @@
 
     <link rel="stylesheet" href="css/mystyle.css">
 </head>
-<!-- Inloggning -->
+<!-- Hantering av inloggning -->
 
 <body style=" background-color: purple;">
     <h1>MYFLOW - Skriva, dela, gilla</h1>
     <div class="myDiv">
 
         <div class="center">
-            <h2 id="myAnswer">Användarnamn:</h2>
+            <h2>Användarnamn:</h2>
             <input type="text" id="username" style="color: black;">
 
-            <h2 id="myAnswer">Lösenord:</h2>
-            <!-- Knappen -->
+            <h2>Lösenord:</h2>
             <input type="password" id="password" style="color: black;">
+            <!-- Knappen hanterar inloggning av användare-->
             <input type="button" value="Send" onClick="password()">
         </div>
+        <h2 id="myAnswer"></h2>
     </div>
 </body>
 
